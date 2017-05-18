@@ -7,3 +7,19 @@
 //
 
 import Foundation
+import ObjectMapper
+
+class Greeting: Mappable {
+    var welcomeText: String?
+    var context: String?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    // Mappable
+    func mapping(map: Map) {
+        welcomeText    <- map["welcome"]
+        context         <- map["context"]
+    }
+}

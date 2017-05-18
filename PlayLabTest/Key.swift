@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct Key {
+    struct Socket {
+        static let path = "sq-dev.pocketplaylab.com"
+        static let port = 5000
+    }
+}
